@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. IDEA AGRO LESTARI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="CV-removebg-preview.png" type="image/png">
+    <!-- Custom CSS -->
+    <style>
+      body {
+        padding-top: 0px; /* Offset for fixed navbar */
+      }
+      
+      .navbar-brand span {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      .background-section {
+        background-image: url('pexels-quang-nguyen-vinh-222549-2132250.jpg'); /* Ganti dengan URL gambar background */
+        background-size: cover;
+        background-position: center;
+        color: rgb(255, 255, 255);
+        padding: 130px 0;
+        text-align: center;
+        
+        
+      }
+      
+      .background-section .container-fluid {
+    background: none; 
+    margin-top: 0px;
+}
+
+
+
+      .carousel img {
+        max-height: 300px;
+        object-fit: cover;
+      }
+
+      /* Section Padding */
+      section {
+        padding: 60px 0;
+      }
+      
+      /* About Section */
+      #about h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      
+      #about p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+      
+      /* Feature Cards */
+      #features h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #198754; /* Bootstrap Success Color */
+      }
+      
+      #features p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      /* Testimonial Cards */
+      .card.shadow-sm {
+        border: none;
+      }
+
+      /* Contact Form */
+      #contact form .form-control {
+        border-radius: 0;
+        border-color: #198754;
+      }
+      
+      #contact form button {
+        border-radius: 0;
+        background-color: #198754;
+        color: white;
+      }
+      
+      /* Footer */
+      footer {
+        background-color: #198754;
+        color: white;
+      }
+      
+      footer a {
+        text-decoration: underline;
+      }
+      
+      footer a:hover {
+        color: #0d6efd;
+      }
+    </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-success fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="CV-removebg-preview.png" alt="Logo" width="155" height="70" class="d-inline-block align-text-top"> 
+        <span class="ms-2">CV. IDEA AGRO LESTARI</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pilih
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">about</a></li>
+                <li><a class="dropdown-item" href="#">testimoni</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Jumbotron Hero Section -->
+  <div class="container-fluid background-section">
+    <div class="container-fluid mt-5 p-0">
+      <h1 class="display-5 fw-bold">Welcome to CV. IDEA AGRO LESTARI</h1>
+      <p class="col-md-8 fs-4 mx-auto">Platform for digital Fertilizer products. Innovating for a safer and more authentic market experience!</p>
+      <button type="button" class="btn btn-success">Learn more</button>
+    </div>
+  </div>
+  
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About CV. IDEA AGRO LESTARI</h2>
+          <p>CV. bertujuan untuk membatu para petani dengan menyediakan pupuk organik solusi untuk mendukung keberhasilan petani kakao di masa depan. Kami menyediakan pupuk terbaik kakao untuk mengoptimalkan kesuburan tanaman.</p>
+        </div>
+        <div class="col-md-6">
+          <!-- Carousel Start -->
+          <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="1.png" class="d-block w-100" alt="Event Image 1"> 
+              </div>
+              <div class="carousel-item">
+                <img src="2.png" class="d-block w-100" alt="Event Image 2"> 
+              </div>
+              <div class="carousel-item">
+                <img src="33.png" class="d-block w-100" alt="Event Image 3"> 
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-light py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h3>Peningkatan Hasil Pertanian</h3>
+          <p> dirancang untuk membantu petani meningkatkan hasil pertanian. Dengan pupuk yang diproduksi secara efisien dan efektif, petani dapat menghasilkan tanaman yang lebih sehat dan berkualitas, yang pada akhirnya meningkatkan produktivitas lahan pertanian..</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Pendekatan Ramah Lingkungan</h3>
+          <p> mendukung praktik pertanian berkelanjutan dengan menyediakan pupuk yang ramah lingkungan. Penggunaan produk pupuk digital mereka membantu mengurangi dampak negatif terhadap lingkungan, seperti erosi tanah dan pencemaran air.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Peningkatan Keamanan dan Keaslian Produk</h3>
+          <p>membantu memastikan keamanan dan keaslian produk pupuk di pasar. Teknologi yang mereka kembangkan memungkinkan pelacakan produk mulai dari produksi hingga ke konsumen akhir, mengurangi risiko pemalsuan atau penipuan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <div class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="3.png" class="card-img-top" alt="Card image 1"> <!-- Ganti dengan gambar yang benar -->
+          <div class="card-body">
+            <h5 class="card-title">MicroHumat </h5>
+            <p class="card-text"> pupuk cair berbasis mikroorganisme unggul yang diperkaya dengan unsur hara makro dan mikro. Produk ini menggabungkan manfaat dari mikroba tanah yang bermanfaat dengan nutrisi penting yang diperlukan tanaman untuk tumbuh dengan cepat dan sehat. </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="4.png" class="card-img-top" alt="Card image 2"> <!-- Ganti dengan gambar yang benar -->
+          <div class="card-body">
+            <h5 class="card-title">Samhumat</h5>
+            <p class="card-text">pupuk organik berbasis asam humat yang kaya akan bahan organik. Produk ini dirancang untuk memperbaiki kesuburan tanah secara alami dan meningkatkan kapasitas tanah dalam menyimpan air serta nutrisi.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="5.png" class="card-img-top" alt="Card image 3"> <!-- Ganti dengan gambar yang benar -->
+          <div class="card-body">
+            <h5 class="card-title">Agrodyke</h5>
+            <p class="card-text">pupuk mineral yang dirancang khusus untuk memberikan asupan nutrisi mikro dan makro yang optimal bagi tanaman. Dengan formulasi yang mengandung kalsium, magnesium, dan unsur hara lainnya, Agrodyke berfungsi untuk memperkuat struktur tanaman, memperbaiki kualitas hasil panen, dan melindungi tanaman dari berbagai stres lingkungan seperti kekeringan atau penyakit.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Testimoni</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-man-vector-png-image_8482758.png" class="card-img-top rounded-circle mx-auto mt-4" style="width: 100px;" alt="Client 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Aguss</h5>
+              <p class="card-text">"Layanan yang diberikan oleh CV. IDEA AGRO LESTARI sangat luar biasa. Kami sangat puas dengan hasilnya."</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-man-vector-png-image_8482758.png" class="card-img-top rounded-circle mx-auto mt-4" style="width: 100px;" alt="Client 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Amir</h5>
+              <p class="card-text">"Teknologi yang mereka tawarkan sangat membantu efisiensi bisnis kami. Sangat direkomendasikan!"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-man-vector-png-image_8482758.png" class="card-img-top rounded-circle mx-auto mt-4" style="width: 100px;" alt="Client 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Daeng Solle</h5>
+              <p class="card-text">"Dari pelayanan hingga implementasi, semuanya berjalan lancar. Sangat profesional dan mudah bekerja sama."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3">
+    <div class="container">
+      <p>© 2024 CV. IDEA AGRO LESTARI. All Rights Reserved.</p>
+      <p>Contact us: contact@ideaagrolestari.com | Follow us on <a href="#" class="text-white">Facebook</a>, <a href="#" class="text-white">Instagram</a>, <a href="#" class="text-white">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
