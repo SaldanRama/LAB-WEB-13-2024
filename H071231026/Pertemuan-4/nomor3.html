@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function hitungHari(hariSekarang, jumlahHari) {
+            const hari = ["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"];
+            const to_day = hari.indexOf(hariSekarang.toLowerCase());
+
+            if (to_day === -1) {
+                return "Nama hari yang Anda masukkan tidak valid.";
+            }
+
+            const tomorrow = (to_day + jumlahHari) % 7;
+
+            return hari[tomorrow];
+        }
+
+        const hariSekarang = prompt("Masukkan hari saat ini:").toLowerCase();
+        const jumlahHari = Number(prompt("Masukkan jumlah hari ke depan:"));
+
+        alert(jumlahHari + " hari setelah hari " + hariSekarang + " adalah hari " + hitungHari(hariSekarang, jumlahHari));
+    </script>
+</body>
+
+</html>
