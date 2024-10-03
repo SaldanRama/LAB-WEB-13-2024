@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let randint = Math.floor(Math.random() * 100) + 1;
+        // alert(randint); 
+        let x = true;
+
+        while (x){
+            let tebakan = Number(prompt("Masukkan Angka dari 1-100: "));
+        
+            if (tebakan === randint){
+                alert("Cakeppp!");
+                x = false;
+                break;
+            } else if (tebakan < randint) {
+                alert("Tebakan terlalu kecil, coba lagi!");
+        
+            } else if (tebakan > randint) {
+                alert("Tebakan terlalu tinggi, coba lagi!");
+            }
+        }
+    </script>
+</body>
+</html>

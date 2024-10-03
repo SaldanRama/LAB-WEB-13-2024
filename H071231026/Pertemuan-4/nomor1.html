@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function countEvenNumbers(start, end) {
+            let result = [];
+
+            for (let i = start; i <= end; i++) {
+                if (i % 2 === 0) {
+                    result.push(i);
+                }
+            }
+
+            alert(`${result.length} (${result.join(', ')})`);
+
+            return result.length;
+        }
+
+        let input = prompt("Masukkan dua angka (start end), pisahkan dengan spasi:");
+
+        let [start, end] = input.split(' ').map(Number);
+
+        countEvenNumbers(start, end);
+    </script>
+</body>
+
+</html>
