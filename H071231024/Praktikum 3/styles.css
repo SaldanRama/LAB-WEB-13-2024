@@ -1,0 +1,113 @@
+nav {
+  background-color: #000000;
+  border-bottom: 1px solid white;
+  position: fixed;
+}
+
+.hero {
+  background: url("images/Anonymous\ Mask.jpg") no-repeat center center;
+  background-position: -50px center;
+  background-size: 150%;
+  height: 650px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-right: 600px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.btn {
+  background-color: red;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #ce0000;
+  color: white;
+}
+
+#about {
+  background: url("images/Binary.png");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  scroll-margin-top: 50px;
+}
+
+#tools {
+  background-color: black;
+  color: white;
+  scroll-margin-top: 50px;
+}
+
+#contact {
+  background: url("images/NonymNoFace.png") no-repeat center center;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  scroll-margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+    text-align: center;
+    height: 650px;
+    background-size: cover;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    padding-top: 50px;
+    margin-right: 0;
+  }
+  .hero p {
+    padding-bottom: 280px;
+    font-size: 1.2rem;
+  }
+  .hero a {
+    font-size: 1rem;
+    margin-top: 0px;
+    padding: 10px 20px;
+  }
+}
+
+.btn-send {
+  background-color: red;
+  color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-send:hover {
+  background-color: #ce0000;
+  color: white;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  border-top: 1px solid white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
