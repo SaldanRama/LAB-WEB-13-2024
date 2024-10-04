@@ -1,0 +1,341 @@
+/*
+$bone: #D5CCBEff;
+$chestnut: #9F4B34ff;
+$jasper: #B3583Fff;
+$walnut-brown: #584C45ff;
+$bone-2: #DDD5C8ff;
+ */
+
+@font-face {
+    font-family: "redWing";
+    src: url(font/Redwing-Medium.otf);
+}
+body {
+    margin :0%;
+    padding: 0%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: 70px;
+    margin-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    z-index: 4;
+}
+
+
+    .nav-item a{
+        height: 100%;
+        margin: 10px;
+        padding: 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(167, 39, 39);
+        font-family: "redWing";
+
+    }
+    .nav-item:hover a{
+        background-color: rgb(38, 38, 38);
+    }
+
+    
+
+
+#main-page {
+    background-color: #D5CCBEff;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+    .main-item p{
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 100px;
+        font-size: 18px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .main-item h1{
+        width: 70%;
+        font-size: 38px;
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-family: "redWing";
+        color: rgb(167, 39, 39);
+    }
+    .main-item h3{
+        font-weight: 700;
+        font-family: "Raleway";
+        width: 40%;
+        font-style: normal;
+        margin-bottom: 1px;
+        margin-left: 100px;
+        font-size: 28px;
+        text-align: left;
+    }
+    .main-item img{
+        width: 500px;
+        margin-right: 100px;
+        position: relative;
+        z-index: 2;
+    }
+    #blackbar {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(32, 32, 32);
+        position: absolute;
+        bottom: 0;
+        z-index: -3;
+
+    }
+    .char-container {
+        z-index: -2;
+        margin-right: 100px;
+        display: flex;
+        transition: transform 2s ease-in-out;
+    }
+    
+    .effect {
+        position: absolute;
+        z-index: -1;
+        bottom: 17%;
+        left: 40%;
+        width: 70%;
+        transition: transform 0.5s ease-in-out;
+        
+    }
+    .char-container img {
+          transition: transform 0.5s ease-in-out;
+    }
+
+
+    .char-container:hover img {
+        transform: scale(1.05, 1.05);
+    }
+    
+    .char-container:hover .effect {
+        transform: scale(1.1, 1.1);
+    }
+
+    
+
+#about-page {
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+    .about-item {
+        color: #D5CCBEff;
+        margin: 5%;
+        text-align: justify;
+    }
+
+#galery-page {
+    background-color: #DDD5C8ff;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+    .galery-grid{
+        display: grid;
+        grid-template-rows: auto auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px; 
+        overflow: hidden;
+
+
+    }
+    .galery-item1{
+        grid-column: span 3;
+        font-family: "redWing";
+        overflow: hidden;
+
+    }
+    .galery-item img {
+        width: 270px;
+        height: 270px; 
+        object-fit: cover; 
+        padding: 2px;
+        transition: transform 0.5s ease;
+        overflow: hidden;
+
+        
+    }
+    
+    .galery-item:hover img {
+        transform: scale(1.07, 1.07);
+        overflow: hidden;
+
+        
+    }
+    
+
+    .galery-item h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+#footer {
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    height: 120px;
+    margin-top: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+    justify-content: space-between;
+
+}
+    .footer-item{
+        color: rgb(167, 39, 39);
+        margin: none;
+        font-size: 17px;
+        display: flex;
+    }
+
+    .footer-item h5{
+        color: rgb(167, 39, 39);
+        margin: 5%;
+        text-align: center;
+
+    }
+    .footer-item img{
+        color: rgb(167, 39, 39);
+        padding: 0%;
+        margin: 29%;
+        width: 20%;
+        height: auto;
+        position: relative;
+        margin: auto;
+        
+    }
+@media (max-width: 1200px) {
+
+    #fakenavbar {
+        background-color: rgb(27, 27, 27);
+        width: 100%;
+        height: auto;
+    
+        }
+    #main-page {
+        height: auto;
+        flex-direction: column;
+    }
+    #about-page{
+        flex-direction: column;
+        height: auto;
+    }
+    .main-item img{
+        margin-right: 120px;
+    }
+
+    .effect {
+        position: absolute;
+        z-index: -1;
+        bottom: 5%;
+        left: 12%;
+        width: 700px;
+
+    }
+
+}
+
+@media (max-width: 900px) {
+
+
+.galery-page{
+    height: auto;
+}
+.galery-grid {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+.galery-item img {
+    width: 170px;
+    height: 170px; 
+    object-fit: cover; 
+    padding: 1px;
+    align-items:center ;
+    
+}
+.galery-item1{
+    grid-column: span 2;
+}
+
+
+}
+@media (max-width: 600px) {
+    .main-item p{
+        width: 70%;
+        margin-left: 10%;
+    }
+    .main-item h1{
+
+
+
+        margin-left: 10%;
+
+    }
+    .main-item h3{
+        margin-left: 10%;
+    }
+
+    #footer {
+        flex-direction: column-reverse;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .footer-item h5{
+        color: rgb(167, 39, 39);
+        margin: 5%;
+    
+    }
+
+    
+}
+
+@media (max-width: 550px) {
+
+    .main-item img{
+        margin-right: 0px;
+    }
+    .nav-item a{
+        height: 100%;
+        margin: 10px;
+        padding: 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(167, 39, 39);
+        font-family: "redWing";
+
+    }
+    .effect {
+        position: absolute;
+        z-index: -1;
+        bottom: 5%;
+        left: 1%;
+        width: 500px;
+
+    }
+
+}
