@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('Aset/bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Montserrat', sans-serif; /* Font Montserrat */
+    
+}
+
+.container{
+    /* max-width: 1200px;  */
+    /* width: fit-content; */
+    width: 50vw;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: center ;
+    font-size: 20px;
+}
+
+.emailpass{
+    padding: 30px;
+}
+/* .login-icon img {
+    
+    max-width: 20px; 
+    height: auto;
+    display:flex;
+    margin: 0 auto 20px auto; 
+   
+} */
+.login-image{
+    display: flex;
+    justify-content: center;
+}
+#login-title {
+    text-align: center;
+    font-size: 100px; 
+    color: #64c564;
+    margin-bottom: 20px;
+    font-weight: bold; 
+}
+
+h2, h3 {
+    color: #333;
+    font-weight: 600;
+
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom:10px 0 5px;
+    color: #333;
+    text-align: left;
+    font-size: 25px;
+
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom:5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; /* Menambahkan font Montserrat */
+}
+
+button {
+    background-color: #369353;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #eedf69;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px; 
+    font-size: 20px;
+}
+
+th {
+    background: #2f8a4c;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #fffd9e;
+}
+
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
