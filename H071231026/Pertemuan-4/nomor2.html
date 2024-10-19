@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<scr>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function hitungDiskon() {
+
+            let hargaAwal = parseFloat(prompt("Masukkan harga barang: "));
+            let jenisBarang = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya): ").toLowerCase();
+            let diskon = 0;
+
+            if (jenisBarang === 'elektronik') {
+                diskon = 10 ;
+            } else if (jenisBarang === 'pakaian') {
+                diskon = 20;
+            } else if (jenisBarang === 'makanan') {
+                diskon = 5;
+            } else {
+                diskon = 0;
+            }
+
+            let jumlahDiskon = (diskon / 100) * hargaAwal;
+            let hargaAkhir = hargaAwal - jumlahDiskon;
+
+            alert(
+                `Harga awal             : Rp${hargaAwal.toLocaleString()}\n` +
+                `Diskon                 : ${diskon}%\n` +
+                `Harga setelah diskon   : Rp${hargaAkhir.toLocaleString()}`
+            );
+        }
+        hitungDiskon();
+    </script>
+</body>
+
+</html>
