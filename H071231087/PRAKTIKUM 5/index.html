@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="alert" class="hide"><span></span></div>
+        <div id="dealer">
+            <h3>Dealer's Hand</h3>
+            <div id="dhand"></div>
+        </div>
+        <div id="player">
+            <h3>Player's Hand</h3>
+            <div id="phand"></div>
+        </div>
+        <div id="controls">
+            <input type="number" id="bet" placeholder="Enter your bet" />
+            <button id="deal">Deal</button>
+            <button id="hit" disabled>Hit</button>
+            <button id="stay" disabled>Stay</button>
+            <br><br>
+            <div id="uang">Money: <span>5000</span></div>
+        </div>
+
+        <div id="gameOver" class="hide">
+            <h2>Game Over</h2>
+            <p>Uang kamu telah habis.</p>
+            <button id="restart">Mulai Ulang</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

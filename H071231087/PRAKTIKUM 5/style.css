@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2b2b2b;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dealer, #player {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#dhand, #phand {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    margin: 0 5px;
+    padding: 0; 
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    color: black;
+}
+
+.card img {
+    width: 80px; 
+    height: 120px; 
+    border-radius: 8px; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.card.up {
+    color: black;
+    background-color: white;
+}
+
+.card.down {
+    background-color: darkgray;
+    color: darkgray;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    width: 300px;
+    text-align: center;
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+#gameOver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    z-index: 1000;
+}
+
+#gameOver.hide {
+    display: none; 
+}
+
+#gameOver h2 {
+    font-size: 2em;
+}
+
+#gameOver p {
+    font-size: 1.2em;
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
