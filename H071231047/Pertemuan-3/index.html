@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Praktikum 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .hero {
+            background: url("data:image/jpeg;base64,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") no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .hero .btn {
+            padding: 10px 30px;
+            font-size: 1.2rem;
+        }
+
+        .features {
+            margin-top: 50px;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">GzStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Selamat Datang di GzStore</h1>
+            <p class="lead">"Your Best Laptop Store in The World"</p>
+            <a href="#about" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Tentang Kami</h2>
+                <p >GzStore berkomitmen untuk menyediakan laptop berkualitas tinggi yang sesuai dengan kebutuhan para pecinta teknologi, profesional, dan pengguna sehari-hari. Baik Anda mencari model terbaru untuk gaming, perangkat berkinerja tinggi untuk bekerja, atau laptop andal untuk sekolah, kami memiliki beragam pilihan merek dan spesifikasi yang sesuai dengan kebutuhan Anda. Misi kami adalah memberikan produk terbaik dengan harga bersaing, didukung oleh layanan pelanggan yang ramah dan panduan ahli. Kami percaya pada penyediaan produk yang menggabungkan kekuatan, keandalan, dan inovasi untuk memastikan Anda mendapatkan pengalaman teknologi terbaik. Pilih GzStore untuk pengalaman berbelanja yang mudah dan memuaskan, di mana kualitas dan kepuasan pelanggan selalu menjadi prioritas utama.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://st4.depositphotos.com/20520458/22611/i/450/depositphotos_226112092-stock-photo-interneinternet-shop-commerce-sale-delivery.jpg" class="img-fluid" alt="Tentang Kami">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="container features py-5">
+        <h2 class="text-center">Produk Rekomendasi Kami</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYet0fHdOg0hWWMLcCMcCe1GoVp43I2h_BIQ&s" alt="Laptop 1" class="img-fluid mb-3">
+                <h4>Asus VivoBook 15Laptop 1</h4>
+                <p>DLaptop yang stylish dan terjangkau, ideal untuk produktivitas sehari-hari dengan layar 15,6 inci dan performa yang handal.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://assets.kompasiana.com/items/album/2024/01/05/lenovo-yoga-slim-9i-659752acc57afb3a8708f7d7.jpg?t=o&v=300" alt="Laptop 2" class="img-fluid mb-3">
+                <h4>Lenovo Yoga Slim 9i</h4>
+                <p>Laptop premium ultra-slim dengan desain mewah, layar OLED 4K, dan performa kuat untuk kebutuhan kreatif dan multitasking.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://image.borneonews.co.id/images/upload/thumbnail/2024/08/23/1724368466-tampilan-asus-tuf-gaming-a14-yang-memukau.jpg" alt="Laptop 3" class="img-fluid mb-3">
+                <h4>Asus TUF A16</h4>
+                <p>Laptop gaming tangguh dengan AMD Ryzen dan grafis NVIDIA, dirancang untuk gamer yang membutuhkan performa tinggi dan daya tahan.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAxbk7RqKo9qm3OqBDUJHorIBpw34KlpMMtDAaaCai8cU4FV9RRzBhemKvs6_9ElVKaDbNurbrToAJL8du8ieTSvXeGcdomMvmnw5BkO-xun9eKAEvZ2ewoONUZ6yv6g0k9NDIfg0hyphenhyphenwBb/s0/Untitled+design+%25283%2529.png" alt="Laptop 4" class="img-fluid mb-3">
+                <h4>Lenovo Legion 5</h4>
+                <p>Laptop gaming berperforma tinggi dengan prosesor AMD Ryzen dan GPU NVIDIA, menghadirkan pengalaman gaming mulus dengan layar 144Hz.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9HmoGiEBQqyArJiuI7u5GY0cnUqkZNqVDg&s" alt="Laptop 5" class="img-fluid mb-3">
+                <h4>Asus ROG Strix G15</h4>
+                <p>Laptop gaming stylish dengan RGB lighting, performa kelas atas, dan sistem pendinginan yang unggul untuk game intensif.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://images.news18.com/ibnlive/uploads/2021/04/1618826776_acer_predator_helios_300-300x200.jpg" alt="Laptop 6" class="img-fluid mb-3">
+                <h4>Acer Predator Helios 300</h4>
+                <p>Laptop gaming dengan spesifikasi tinggi, menggabungkan kekuatan prosesor Intel dan GPU NVIDIA untuk performa gaming maksimal.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Hubungi Kami</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Anda">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Pesan Anda"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright &copy; 2024 GzStore. All Rights Reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.instagram.com/phantom.xf/">Instagram</a> | 
+                <a href="https://www.facebook.com/arelio.palinoan.5">Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
