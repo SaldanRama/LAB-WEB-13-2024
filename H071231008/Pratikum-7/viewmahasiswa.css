@@ -1,0 +1,131 @@
+/* CSS HEX 
+--chrysler-blue: #5603adff;
+--amethyst: #8367c7ff;
+--celadon: #b3e9c7ff;
+--tea-green: #c2f8cbff;
+--honeydew: #f0fff1ff;
+*/
+body,html{
+    padding: 0px;
+    margin: 0px;
+    background: rgb(255,255,255);
+    background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(51,176,141,1) 48%, rgba(119,255,183,1) 100%);;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    top: 0px;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(277deg, rgba(255,255,255,0) 0%, rgb(189, 255, 220) 100%);
+}
+    .header h1{
+        font-size: 24px;
+        color: rgb(55, 96, 58);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .header #profile-text{
+        margin-left: 20px;
+        justify-content: left;
+    }
+
+    .header div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 20px;
+    }
+
+    .header button{
+        transition: .5s;
+        margin-top: 0px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        background-color: rgb(39, 168, 86);
+        border-radius: 10px;
+        color: white;
+        width: 100px;
+        height:50px;
+        border: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .header button:hover{
+        background-color: rgb(43, 71, 53);
+        width: 100px;
+        height: 55px;
+       
+    }
+    .header button:active{
+    
+        background-color: rgb(43, 68, 52);
+        height: 55px;
+       
+    }
+.data-maha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    background-color:rgb(230, 232, 230);
+    width: 700px;
+    height: 600px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px lightblue;
+}
+.data-maha img{
+    width: 300px;
+    margin-right: 5%;
+}
+.data-maha div p{
+    width: 300px;
+    font-weight: 100;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.data-maha div h2{
+    font-size: 28px;
+    margin-bottom: 0px;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.data-maha h3{
+    margin-top: 0px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.data-maha h4{
+    font-size: 13px;
+    color: rgb(116, 116, 116);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.data-maha button{
+    transition: .5s;
+    margin-top: 0px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    background-color: #b3e9c7ff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.data-maha button:hover{
+    background-color: rgb(92, 230, 142);
+    width: 200px;
+   
+}
+.data-maha button:active{
+
+    background-color: rgb(0, 255, 94);
+    width: 200px;
+   
+}
