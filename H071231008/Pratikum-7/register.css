@@ -1,0 +1,89 @@
+/* CSS HEX 
+--chrysler-blue: #5603adff;
+--amethyst: #8367c7ff;
+--celadon: #b3e9c7ff;
+--tea-green: #c2f8cbff;
+--honeydew: #f0fff1ff;
+*/
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(51,176,141,1) 48%, rgba(119,255,183,1) 100%);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+    .login-box img{
+        width: 300px;
+    }
+    .login-box form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color:rgb(230, 232, 230);
+        width: 400px;
+        height: 700px;
+        border-radius: 10%;
+        box-shadow: 10px 10px 10px lightblue;
+
+    }
+    .login-box ::placeholder{
+        color: rgb(173, 205, 215);
+        font-size: 15px;
+        font-family:fantasy;
+        text-align: center;
+        font-weight: 300;
+    }
+    input{
+        color: rgb(51, 130, 157);
+        font-size: 15px;
+        font-family:fantasy;
+        width: 80%;
+        height:30px;
+        outline: none;
+    }
+    input:hover {
+        border: 1px solid rgb(51, 130, 157);
+    }
+    input:focus {
+        border: 2px solid rgb(51, 130, 157);
+    }
+    .input-container{
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon {
+        padding: 10px;
+        background: rgb(51, 130, 157);
+        color: white;
+        width: 25px;
+        height: 15px;
+        text-align: center;
+      }
+    .login-box H1{
+        color: rgb(51, 130, 157);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .login-box a{
+        color: rgb(51, 130, 157);
+        text-decoration: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .login-box button{
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        width: 125px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgb(51, 130, 157);
+    }

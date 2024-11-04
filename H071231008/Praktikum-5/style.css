@@ -1,0 +1,571 @@
+/* CSS HEX 
+--raisin-black: #1B1E2Bff;
+--crimson: #E20D35ff;
+--rojo: #DF0930ff;
+--dim-gray: #5C5F6Bff;
+--raisin-black-2: #221A26ff;
+*/
+
+/*
+hide panah
+/*
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+@font-face {
+    font-family: "Exquisite";
+    src: url(font/WesternBangBang-Regular.ttf);
+}
+@font-face {
+    font-family: "Cowboy";
+    src: url(font/Cowboys\ 2.0.otf);
+}
+
+@font-face {
+    font-family: "Longshot";
+    src: url(font/Long_Shot.ttf);
+}
+@font-face {
+    font-family: "Freshman";
+    src: url(font/Freshman.ttf);
+}
+@font-face {
+    font-family: "Cinzel";
+    src: url(font/Cinzel-Black.otf);
+}
+
+body {
+    background-color: rgb(19, 15, 20);
+    background-image: url("https://i.pinimg.com/originals/67/80/e3/6780e3322b84119a5b708223420b63d0.gif");
+    background-size: cover; 
+    background-position: center; 
+    background-blend-mode:luminosity; 
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(19, 15, 20, 0.95);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+#topbar {
+    position:fixed ;
+    z-index: 9;
+    background: linear-gradient(to right, rgba(19, 15, 20,0) 50%, #E20D35ff 100%);
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-flow: row-reverse;
+    height:6vh;
+    width: 100vw;
+    align-items: center;
+}
+    #topbar button{
+        border: 2px solid;
+        background-color:#DF0930ff ;
+        width: 200px;
+        font-family: "Cowboy";
+        font-size: 25px;
+        letter-spacing: 10px;
+        margin-right: 20px;
+
+    }
+
+    #topbar .material-symbols-outlined {
+    font-size: 35px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 1000,
+    'GRAD' 0,
+    'opsz' 24
+    
+    }
+
+#navbar {
+    background-color: #E20D35ff;
+    position:fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+    #navbar h1 {
+        font-family: "Exquisite";
+        color: white;
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+        margin-left: 15px;
+    }
+    #navbar button{
+        transition: .5s;
+        background-color:rgb(31, 10, 10) ;
+        border: none;
+        color: #E20D35ff;
+        width: 100px;
+        padding: 5px;
+        border-radius:3px ;
+        font-family: "Cowboy";
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin: 20px;
+    }
+
+    #navbar button:hover{
+        background-color:rgb(255, 255, 255) ;
+        border: none;
+        width: 200px;
+        cursor: pointer;
+    }
+
+    #info-dealer{
+        display: flex;
+        color: white;
+        text-align: center;
+        align-items: center;
+        padding-top: 40px;
+
+    }
+    #info-dealer #dealer-section{
+        flex-basis: 100%;
+        
+    }
+    #info-dealer #info-panel{
+        flex-basis: 100%;
+        background: linear-gradient(to right, rgba(19, 15, 20,0) 50%, #E20D35ff 100%);
+        height: 28;
+    }
+    #info-dealer #info-panel h2{
+        font-family: "Freshman";
+        color: #E20D35ff;
+        font-size: 30px;
+    }
+    #info-dealer #info-panel h3{
+        font-family: "cowboy";
+        font-weight: 10;    
+    }
+    #info-dealer #info-panel h3 span{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+
+
+#dealer-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 00px 0px 30px 100px;
+    perspective: 1000px;
+    perspective-origin: 200px;
+
+}
+    #dealer-section .dealer-item {
+        transition: .9s;
+        transform-style:preserve-3d;
+        animation: slideFromLeft 0.6s ease-in-out;
+    }
+    #dealer-section .dealer-item img {
+        width: 110px;
+        margin: 10px 0px 0px 30px;
+    }
+
+
+    #dealer-section .dealer-item:hover{
+        transform: translateZ(165px);
+    }
+    #dealer-section .dealer-item:hover + *{
+        filter: brightness(.5);
+        transform: rotateY(25deg);
+    }
+    #dealer-section .dealer-item:hover + * + *{
+        filter: brightness(.3);
+        transform: rotateY(25deg);
+    }
+    #dealer-section .dealer-item:has(+ *:hover){
+        filter: brightness(.5);
+        transform: rotateY(-25deg);
+    }
+    #dealer-section .dealer-item:has(+ * + *:hover){
+        filter: brightness(.3);
+        transform: rotateY(-25deg);
+    }
+    @keyframes slideFromLeft {
+        0% {
+            transform: translateX(-100%) rotateY(100deg) rotateX(-30deg);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0) rotateY(0);
+            opacity: 1;
+        }
+    }
+    #dealer-section h1 {
+        font-family: "LongShot";
+        font-weight: 10;
+        color: white;
+        font-size: 70px;
+        padding: 0%;
+        margin: 0%;
+        margin-left: 30px;
+        margin-top: 20px;
+        flex-basis: 100%;
+    }
+    #dealer-section #dealer-card-count{
+        font-family:"Freshman";
+        font-size: 60px;
+    }
+
+#player{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+    #game-button{
+        margin: 0px 0px 0px 0px;
+        flex-basis: 55%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #game-button button{
+        transition: 0.4s;
+        background-color:rgb(5, 5, 5) ;
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius:3px;
+        font-family: "LongShot";
+        font-size: 35px;
+        margin: 20px;
+    }
+    #game-button button:hover{
+        background-color:rgb(7, 7, 7) ;
+        border-color: #E20D35ff;
+        color: #E20D35ff;
+        width: 200px;
+        cursor: pointer;
+        letter-spacing: 5px;
+    }
+    #game-button button:active{
+        background-color:rgb(234, 234, 234) ;
+        border-color: #E20D35ff;
+        color: #E20D35ff;   
+        width: 200px;
+        cursor: pointer;
+    }
+        
+#player-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0px 0px 0px 000px;
+    perspective: 1000px;
+    justify-content: center;
+    align-items: center;
+}   
+
+    #player-section .player-item{
+        transition: .9s;
+        transform-style:preserve-3d ;
+        animation: slideFromRight 0.6s ease-in-out;
+
+    }
+    #player-section .player-item img{
+        width: 130px;
+        margin: 10px 0px 0px 30px;
+    }
+    #player-section .player-item:hover{
+        transform: translateZ(100px);
+    }
+    #player-section .player-item:hover + *{
+        transform: rotateY(25deg);
+        filter: brightness(.5);
+    }
+    #player-section .player-item:has(+ *:hover){
+        transform: rotateY(-25deg);
+        filter: brightness(.5);
+    }
+    #player #player-section #player-card-count{
+        font-family:"Freshman";
+        font-size: 60px;
+    }
+    @keyframes slideFromRight {
+        0% {
+            transform: translateX(100%) rotateY(-100deg) rotateX(30deg);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0) rotateY(0);
+            opacity: 1;
+        }
+    }
+
+    #player-section h1{
+        font-family: "LongShot";
+        font-weight: 10;
+        color: white;
+        font-size: 70px;
+        padding: 0%;
+        flex-basis: 100%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5);
+}
+
+    .modal-content {
+        background-color: #c10a2b;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #000000;
+        width: 20%; 
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    #bet-amount {
+        background-color: #101010;
+        border: none;
+        color: white;
+        width: 250px;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: "Freshman";
+
+    }
+    #bet-amount:hover, #bet-amount:focus{
+        outline: none;
+    }
+    #bet-modal .modal-content h2{
+        font-family: "LongShot";
+        font-size: 50px;
+        margin-bottom: 0%;
+    }
+    #bet-modal button {
+        font-family: "freshman";
+        transition: .5s;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: rgb(14, 14, 14);
+        color: white;
+        border: none;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+    #bet-modal button:hover {
+        background-color: white;
+        color: #c10a2b;
+    }
+
+#win-celebration{
+
+    font-family: "Longshot";
+    display: none;
+    color: white;
+    font-size: 100px;
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%; 
+    letter-spacing: 10px;
+    background-color: rgba(0,0,0,0.8);
+    animation: fadeIn 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+}
+    #win-celebration *{
+        padding: 0%;
+        margin: 0%;
+    }
+#lose-celebration{
+    font-family: "Longshot";
+    display: none;
+    color: white;
+    font-size: 100px;
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%; 
+    letter-spacing: 10px;
+    background-color: rgba(0,0,0,0.8);
+    animation: fadeIn 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+}
+    #lose-celebration *{
+        padding: 0%;
+        margin: 0%;
+    }
+#outofmoney-celebration{
+    font-family: "cowboy";
+    display: none;
+    color: white;
+    font-size: 30px;
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%; 
+    letter-spacing: 10px;
+    background-color: rgba(0,0,0,0.8);
+    animation: fadeIn 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+    flex-direction: column;
+}
+    #outofmoney-celebration *{
+        padding: 0%;
+        margin: 0%;
+    }
+    #outofmoney-celebration img{
+        width: 500px;
+
+    }
+
+    @keyframes fadeIn{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* <div id="show-hit">
+    <div class="hit-card">
+        <img src="http://www.marytcusack.com/maryc/decks/Images/Cards/OrderElectus/S01.jpg">
+    </div>
+</div> */
+#show-hit {
+    display: none;
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.8);
+    perspective: 1000px;
+    animation: fadeIn 0.1s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+
+}
+#show-hit img{
+    width: 350px;
+    transition: .1s;
+    transform-style:preserve-3d ;
+    animation: slideFromNothing 0.6s ease-in-out;
+    transition: slideOut 0.6s ease-in-out;
+
+}
+
+
+@keyframes slideFromNothing {
+    0% {
+        transform: translateX(-100%) rotateY(100deg) rotateX(10deg) rotateZ(-180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width:1309px) {
+    .modal-content {
+        background-color: #c10a2b;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #000000;
+        width: 300px; 
+        text-align: center;
+        border-radius: 10px;
+    }
+    #win-celebration{
+        font-size: 80px;
+        flex-direction: column;
+    }
+        #win-celebration *{
+            padding: 0%;
+            margin: 0%;
+            width: 300px;
+        }
+    #lose-celebration{
+        font-size: 80px;
+        flex-direction: column;
+    }
+        #lose-celebration *{
+            padding: 0%;
+            margin: 0%;
+            width: 300px;
+        }
+    
+    
+}

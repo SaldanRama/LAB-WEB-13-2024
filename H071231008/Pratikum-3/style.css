@@ -29,7 +29,6 @@ h2 {
     height: 100vh;
     object-fit: cover;
     filter: brightness(0.2);
-
     position: absolute;
     top: 0;
     left: 0;
